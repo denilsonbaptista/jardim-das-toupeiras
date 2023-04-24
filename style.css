@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: url(./assets/fundo.svg) no-repeat;
+  background-size: cover;
+
+  min-height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  padding-top: 30rem;
+
+  max-width: 120rem;
+}
+
+.moles {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.moles .mole {
+  background: url(./assets/toupeira.svg) no-repeat center;
+
+  height: 20rem;
+}
+
+.moles .mole:nth-child(3) {
+  animation: animations-mole 900ms;
+}
+
+.moles .mole:nth-child(6) {
+  animation: animations-mole 900ms 1.5s forwards;
+}
+
+.moles .mole:nth-child(11) {
+  animation: animations-mole 900ms 3s forwards;
+}
+
+.moles .mole:nth-child(1) {
+  animation: animations-mole 900ms 4s forwards;
+}
+
+.moles .mole:nth-child(8) {
+  animation: animations-mole 900ms 5s forwards;
+}
+
+@keyframes animations-mole {
+  0% {
+    background: url(./assets/toupeira1.svg) no-repeat center;
+  }
+
+  33% {
+    background: url(./assets/toupeira2.svg) no-repeat center;
+  }
+
+  49% {
+    background: url(./assets/toupeira3.svg) no-repeat center;
+  }
+
+  65% {
+    background: url(./assets/toupeira4.svg) no-repeat center;
+  }
+
+  81% {
+    background: url(./assets/toupeira5.svg) no-repeat center;
+  }
+
+  100% {
+    background: url(./assets/toupeira.svg) no-repeat center;
+  }
+}
